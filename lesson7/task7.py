@@ -28,7 +28,7 @@ def sort_files_by_type(source_dir, destination_dir):
                 if extension.lower() in ext_list:
                     dest_dir = os.path.join(destination_dir, directory)
                     try:
-                        # Используем "мягкую" операцию копирования и удаления исходного файла
+                        # Используем операцию копирования и удаления исходного файла
                         shutil.copy(file_path, dest_dir)
                         os.remove(file_path)
                     except Exception as e:
